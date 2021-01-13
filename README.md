@@ -11,18 +11,31 @@ Add this line to your application's Gemfile:
 gem 'gamayun'
 ```
 
-And then execute:
-```bash
-$ bundle
+To configure the Devise included in Gamayun, a file in (`config/initializers/devise.rb`) needs to be added with the following content:
+
+```ruby
+Devise.setup do |config|
+  config.secret_key = YOUR_KEY
+end
 ```
 
-Or install it yourself as:
+And then execute:
 ```bash
-$ gem install gamayun
+$ rails gamayun:install:migrations
+$ bundle exec rake db:migrate
 ```
+
+
 
 ## Contributing
 Contribution directions go here.
 
 ## License
 The gem is available as open source under the terms of the [MIT License](https://opensource.org/licenses/MIT).
+
+
+
+
+
+
+
