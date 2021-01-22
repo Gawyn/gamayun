@@ -1,5 +1,5 @@
 Gamayun::Engine.routes.draw do
-  devise_for :users, class_name: "Gamayun::User"
+  devise_for :users, class_name: "Gamayun::User", module: :devise
 
   namespace :admin do
     Gamayun::Engine.app_config['manageable_models'].each do |model_attrs|
