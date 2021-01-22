@@ -8,6 +8,8 @@ group :development do
   gem 'sqlite3'
 end
 
+gem 'slim-rails'
+
 gem 'devise'
 
 # To use a debugger

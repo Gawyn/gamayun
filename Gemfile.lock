@@ -4,6 +4,7 @@ PATH
     gamayun (0.1.0)
       devise (~> 4.7.3)
       rails (~> 6.1.1)
+      slim-rails (~> 3.2)
 
 GEM
   remote: https://rubygems.org/
@@ -131,6 +132,13 @@ GEM
     responders (3.0.1)
       actionpack (>= 5.0)
       railties (>= 5.0)
+    slim (4.1.0)
+      temple (>= 0.7.6, < 0.9)
+      tilt (>= 2.0.6, < 2.1)
+    slim-rails (3.2.0)
+      actionpack (>= 3.1)
+      railties (>= 3.1)
+      slim (>= 3.0, < 5.0)
     sprockets (4.0.2)
       concurrent-ruby (~> 1.0)
       rack (> 1, < 3)
@@ -139,7 +147,9 @@ GEM
       activesupport (>= 4.0)
       sprockets (>= 3.0.0)
     sqlite3 (1.4.2)
+    temple (0.8.2)
     thor (1.0.1)
+    tilt (2.0.10)
     tzinfo (2.0.4)
       concurrent-ruby (~> 1.0)
     warden (1.2.9)
@@ -155,6 +165,7 @@ PLATFORMS
 DEPENDENCIES
   devise
   gamayun!
+  slim-rails
   sqlite3
 
 BUNDLED WITH
