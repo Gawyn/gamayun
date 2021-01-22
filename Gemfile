@@ -12,5 +12,7 @@ gem 'slim-rails'
 
 gem 'devise'
 
+gem 'simple_form'
+
 # To use a debugger
 # gem 'byebug', group: [:development, :test]
