@@ -3,7 +3,7 @@ Gamayun::Engine.routes.draw do
 
   namespace :admin do
     Gamayun::Engine.app_config['manageable_models'].each do |model_attrs|
-      resource model_attrs['model'].pluralize.to_sym
+      resources model_attrs['model'].pluralize.to_sym
     end
   end
 end
