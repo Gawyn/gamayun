@@ -1,0 +1,5 @@
+h2 = @model_name.capitalize.pluralize
+oooo
+
+- @resources.each do |resource|
+  = link_to resource.id, eval("edit_admin_#{@model_name}_path(resource)")

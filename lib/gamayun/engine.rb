@@ -7,6 +7,8 @@ module Gamayun
       app.config.assets.precompile += %w( gamayun/application.css )
     end
 
+    config.autoload_paths << File.expand_path("../app/controllers/**/*")
+
     def self.app_config
       filename = "#{Rails.root}/config/gamayun.yml"
       return @app_config if @app_config

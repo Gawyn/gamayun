@@ -1,0 +1,4 @@
+= simple_form_for @resource, url: @resource.new_record? ? eval("admin_#{@model_name.pluralize}_path") : eval("admin_#{@model_name}_path(@resource.id)") do |f|
+  - @editable_attributes.each do |attr|
+    = f.input attr.to_sym
+  = f.button :submit
