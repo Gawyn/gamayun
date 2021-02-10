@@ -4,6 +4,7 @@ PATH
     gamayun (0.1.0)
       devise (~> 4.7.3)
       rails (~> 6.1.1)
+      simple_form
       slim-rails (~> 3.2)
 
 GEM
