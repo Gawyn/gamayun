@@ -34,7 +34,7 @@ module Gamayun
             end
 
             def require_role!
-              # return false unless current_user && current_user.role == #{model_attrs['required_role']}
+              return false unless current_user && current_user.role == #{model_attrs['required_role']}
             end
           end
         CONTROLLERCLASS
