@@ -14,5 +14,7 @@ gem 'devise'
 
 gem 'simple_form'
 
+gem 'aws-sdk-s3', require: false
+
 # To use a debugger
 # gem 'byebug', group: [:development, :test]
